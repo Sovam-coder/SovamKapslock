@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/logo & favicon/favicon.png" type="image/x-icon">
+    <link href="assets/img/logo.png" rel="icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Offers</title>
+    <style>
+        .navbar{
+      position: fixed;
+      width: 100%;
+      background: #fff !important;
+      box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+      transition: .6s;
+      z-index: 10;
+    }
+
+    
+
+    .navbar-nav{
+      font-family: 'Jost', sans-serif;
+      font-weight: bold;
+    }
+
+    .nav-link{
+      margin-right: 5px;
+    }
+
+    .nav-link:hover{
+      color: rgb(247, 6, 6) !important;
+    }
+
+    nav.sticky{
+      background-color: #fff !important;
+      margin-right: 5px;
+    }
+
+    @media (max-width:768px){
+
+      .navbar{
+        z-index: 10;
+      }
+
+      .navbar-brand .logo-one{
+        margin-left: 5px !important;
+        height: 40px;
+      }
+
+      .icons{
+        margin-bottom: 1rem;
+      }
+
+    }
+
+      /* footer section */
+      footer{
+        background: #000;
+        color: #fff;
+        font-family: 'josefin sans';
+      }
+      .logo2{
+        height:50px; 
+        margin:30px 20px 5px;
+      }
+
+      .content1{
+        margin:20px;
+        font-size: 16px;
+        line-height: 25px;
+        color: #fff;
+        
+      }
+
+      .content2{
+        margin-top: 50px;
+        margin-left: 30px;
+        font-weight: bold;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        display: inline-block;
+        font-family: 'jost';
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+
+      .icons{
+        margin-left: 14%;
+        margin-top: 4%;
+      }
+
+      .icons .icon-link{
+        color: #fff;
+        margin-right: 10px;
+      }
+
+      .content3{
+        font-size: 15px;
+      }
+
+      .footer2{
+        background: #333;
+        color: grey;
+        padding: 3px;
+        text-align: center;
+        font-family: 'josefin sans';
+      }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  color: #272727;
+  font-family: 'montserrat';
+  
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #f10707 40%, #f806ec 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+    </style>
+
+  </head>
+  <body>
+
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img class="logo-one" src="assets/logo & favicon/logo1.png" alt="logo one" width="100%">
+      
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="profile.html"></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html"></a>
+          </li>
+          
+          <li class="nav-item active">
+            <a class="nav-link" href="product.html">Products</a>
+          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html"></a>
+            </li>
+            
+              
+
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.html"></a>
+              </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="portfolio.pdf">Portfolio</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html"></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="offer.html">Offers</a>
+              </li>
+            
+            
+            
+            
+        </ul>
+      </div>
+    </nav>
+<br><br><br><br><br>
+<div>
+    <strong><h1>The Starter Packs</h1></strong>
+</div>
+    <div class="main">
+        
+        <ul class="cards">
+          <li class="cards_item">
+            
+            <div class="card" >
+              <center><div class="card_image" ><img src="assets/img/internet.svg" width="30%"></div></center>
+              <div class="card_content">
+                
+                
+                <br>
+               
+                
+                
+              <center><h4> Website</h4></center>
+              <center><p style="color: white;"> 
+                44% OFF FROM ORIGINAL PRICE</p></center>
+                <ul>
+                  <li style="color: white;">Upto 4 static page</li>
+                  <li style="color: white;">3 Edits overall</li>
+                  <li style="color: white;">Hosting Included</li>
+                  <br>
+                  <br>
+              </ul>
+            </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            
+            <div class="card" >
+              <center><div class="card_image" ><img src="assets/img/design.svg" width="36%"></div></center>
+              <div class="card_content">
+                
+                
+                <br>
+               
+                
+                
+              <center><h4> Logo Design</h4></center>
+              <center><p style="color: white;"> 
+                44% OFF FROM ORIGINAL PRICE</p></center>
+                <ul>
+                  <li style="color: white;"> 1 Logo Sample</li>
+                  <li style="color: white;">2 Edits overall</li>
+                  <li style="color: white;">Files: JPG & PNG</li>
+                  <br>
+                  <br>
+              </ul>
+            </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            
+            <div class="card" >
+              <center><div class="card_image" ><img src="assets/img/video.png" width="36%"></div></center>
+              <div class="card_content">
+                
+                
+                <br>
+               
+                
+                
+              <center><h4>Intro Video</h4></center>
+              <center><p style="color: white;"> 
+                44% OFF FROM ORIGINAL PRICE</p></center>
+                <ul>
+                  <li style="color: white;"> 1 Video Sample</li>
+                  <li style="color: white;">Upto 30sec</li>
+                  <li style="color: white;">2 Edits overall</li>
+                  <li style="color: white;">File: Mp4 file (720p)</li>
+                  <br>
+              </ul>
+            </div>
+            </div>
+          </li>
+         
+            <div class="main">
+                <div>
+                    <strong><center><h1>The Midranger Pack</h1></center></strong>
+                </div>
+                <ul class="cards">
+                    
+                  <li class="cards_item">
+                    
+                    <div class="card" >
+                      <center><div class="card_image" ><img src="assets/img/internet.svg" width="30%"></div></center>
+                      <div class="card_content">
+                        
+                        
+                        <br>
+                       
+                        
+                        
+                      <center><h4> Website</h4></center>
+                      <center><p style="color: white;"> 
+                        33% OFF FROM ORIGINAL PRICE</p></center>
+                        <ul>
+                          <li style="color: white;">Upto 6 static page</li>
+                          <li style="color: white;">3 Edits overall</li>
+                          <li style="color: white;">Hosting Included</li>
+                          <li style="color: white;">Live Chat</li>
+                          
+                          <br>
+                      </ul>
+                    </div>
+                    </div>
+                  </li>
+                  <li class="cards_item">
+                    
+                    <div class="card" >
+                      <center><div class="card_image" ><img src="assets/img/design.svg" width="36%"></div></center>
+                      <div class="card_content">
+                        
+                        
+                        <br>
+                       
+                        
+                        
+                      <center><h4>Branding</h4></center>
+                      <center><p style="color: white;"> 
+                        33% OFF FROM ORIGINAL PRICE</p></center>
+                        <ul>
+                          <li style="color: white;"> 1 Logo Sample</li>
+                          <li style="color: white;">2 Edits overall</li>
+                          <li style="color: white;">Visiting Cards</li>
+                          <li style="color: white;">LetterHead</li>
+                          <li style="color: white;">Files: JPG & PNG</li>
+                          
+                      </ul>
+                    </div>
+                    </div>
+                  </li>
+                  <li class="cards_item">
+                    
+                    <div class="card" >
+                      <center><div class="card_image" ><img src="assets/img/video.png" width="36%"></div></center>
+                      <div class="card_content">
+                        
+                        
+                        <br>
+                       
+                        
+                        
+                      <center><h4>Intro Video</h4></center>
+                      <center><p style="color: white;"> 
+                        33% OFF FROM ORIGINAL PRICE</p></center>
+                        <ul>
+                          <li style="color: white;"> 1 Video Sample</li>
+                          <li style="color: white;">Upto 1min</li>
+                          <li style="color: white;">2 Edits overall</li>
+                          <li style="color: white;">File: Mp4 file (720p)</li>
+                          <br>
+                      </ul>
+                    </div>
+                    </div>
+                  </li>
+                    <div class="main">
+                        <div>
+                            <strong><center><h1>The Power Pack</h1></center></strong>
+                        </div>
+                        <ul class="cards">
+                          <li class="cards_item">
+                            
+                            <div class="card" >
+                              <center><div class="card_image" ><img src="assets/img/internet.svg" width="30%"></div></center>
+                              <div class="card_content">
+                                
+                                
+                                <br>
+                               
+                                
+                                
+                              <center><h4> Website</h4></center>
+                              <center><p style="color: white;"> 
+                                45% OFF FROM ORIGINAL PRICE</p></center>
+                                <ul>
+                                  <li style="color: white;">Upto 6 static page</li>
+                                  <li style="color: white;">3 Edits overall</li>
+                                  <li style="color: white;">Hosting Included</li>
+                                  <li style="color: white;">Live Chat</li>
+                                  <li style="color: white;">Chat bot</li>
+                              </ul>
+                            </div>
+                            </div>
+                          </li>
+                          <li class="cards_item">
+                            
+                            <div class="card" >
+                              <center><div class="card_image" ><img src="assets/img/design.svg" width="36%"></div></center>
+                              <div class="card_content">
+                                
+                                
+                                <br>
+                               
+                                
+                                
+                              <center><h4> Branding</h4></center>
+                              <center><p style="color: white;"> 
+                                45% OFF FROM ORIGINAL PRICE</p></center>
+                                <ul>
+                                  <li style="color: white;"> 1 Logo Sample</li>
+                                  <li style="color: white;">3 Edits overall</li>
+                                  <li style="color: white;">Visiting Card</li>
+                                  <li style="color: white;">Letterhead</li>
+                                  <li style="color: white;">Pamplet</li>
+                                  
+                              </ul>
+                            </div>
+                            </div>
+                          </li>
+                          <li class="cards_item">
+                            
+                            <div class="card" >
+                              <center><div class="card_image" ><img src="assets/img/video.png" width="36%"></div></center>
+                              <div class="card_content">
+                                
+                                
+                                <br>
+                               
+                                
+                                
+                              <center><h4>Intro Video</h4></center>
+                              <center><p style="color: white;"> 
+                                44% OFF FROM ORIGINAL PRICE</p></center>
+                                <ul>
+                                  <li style="color: white;"> 1 Logo reveal video Upto 10sec</li>
+                                  <li style="color: white;">Upto 30sec</li>
+                                  <li style="color: white;">2 Edits overall</li>
+                                  <li style="color: white;">File: Mp4 file (720p)</li>
+                                  <li style="color: white;">1 Intro Video</li>
+                                  
+                              </ul>
+                            </div>
+                            </div>
+                          </li>
+          
+          
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
